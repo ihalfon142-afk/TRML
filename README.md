@@ -1,35 +1,28 @@
 # TRML — Black Hole Dashboard background
 
-Greyscale-optimized PNGs for the [Black Hole Dashboard](https://github.com/ihalfon142-afk/TRML) Private Plugin on a TRMNL e-ink display.
+Original starry-sky-with-cloud photograph (B&W) used as the background
+for the Black Hole Dashboard Private Plugin on a TRMNL e-ink display.
 
-## Files
+## File
 
-| File | Resolution | Use |
-|---|---|---|
-| `output/background_latest.png` | 800×480 | TRMNL OG, TRMNL X (downscaled), default |
-| `output/background_800x480.png` | 800×480 | same as above, identical file |
-| `output/background_1872x1404.png` | 1872×1404 | TRMNL X native resolution |
+| File | Notes |
+|---|---|
+| `output/background.jpg` | Original JPEG, 740×415, ~57 KB. Uploaded as-is. |
 
-## Raw URLs
-
-Use these directly in the Private Plugin's `background_url` form field:
+## Raw URL
 
 ```
-https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/output/background_latest.png
-https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/output/background_800x480.png
-https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/output/background_1872x1404.png
+https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/output/background.jpg
 ```
+
+TRMNL will upscale this to the device resolution (800×480 OG, 1872×1404 X).
 
 ## Source
 
-Source PNG (3840×2160) and the Python optimizer that produced these files
-live in a separate project (`C:\Users\chech\Documents\Wallpapers\trmnl\`).
-This repo just hosts the e-ink-optimized variants.
+Source: original JPEG from the user's photo library.
+No preprocessing or dithering — the photo is already greyscale.
 
 ## Regenerating
 
-```bash
-# From the source project dir:
-python background.py
-# Then copy output/background_latest.png (and friends) here.
-```
+To swap in a different background photo, just replace `output/background.jpg`
+with a new file and push it to this repo.
