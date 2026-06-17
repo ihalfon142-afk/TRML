@@ -1,0 +1,15 @@
+/* JetBrains Mono @font-face declarations for TRMNL Private Plugin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://raw.githubusercontent.com/ihalfon142-afk/TRML/main/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+}
